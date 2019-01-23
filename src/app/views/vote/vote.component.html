@@ -1,0 +1,260 @@
+<ol class="breadcrumb">
+  <app-breadcrumb></app-breadcrumb>
+  <!-- Breadcrumb Menu-->
+  <li style="margin-left: auto;">
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+      <a class="btn" href="#"><i class="icon-speech"></i></a>
+      <a class="btn waves-effect waves-light" [routerLink]="['/dashboard']"><i class="icon-graph"></i> &nbsp;Résultats</a>
+      <a class="waves-effect waves-light btn" [routerLink]="['/vote']" ><i class="icon-settings"></i> &nbsp;Votez</a>
+    </div>
+  </li>
+</ol>
+<div class="app-body">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <main class="main d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mx-auto">
+          <div class="card mx-4">
+            <div class="card-body p-10">
+              <form>
+                <h4>Qui sera notre future Présedent ? </h4>
+                <p class="text-muted"> à nous de decider notre future</p>
+
+
+                <div class="row">
+                  <div class="col-2"></div>
+                  <div class="col-10">
+                    <div class="row">
+                      <div class="col-2">
+                        <a class="waves-effect waves-light btn-small red" >Rejter</a></div>
+                      <div class="col-2"><a class="waves-effect waves-light btn-small orange" >insuff</a></div>
+                      <div class="col-2"><a class="waves-effect waves-light btn-small yellow" >&nbsp;pass&nbsp;</a></div>
+                      <div class="col-2"><a class="waves-effect waves-light btn-small light-green" >&nbsp;A.bien&nbsp;</a></div>
+                      <div class="col-2"><a class="waves-effect waves-light btn-small light-green darken-3" >&nbsp;Bien&nbsp;</a></div>
+                      <div class="col-2"><a class="waves-effect waves-light btn-small green darken-3" >T.Bien</a></div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <div class="col-2"><a class="btn-floating btn-small waves-effect waves-light blue">P1</a></div>
+                  <div class="col-10">
+                    <div class="row">
+                      <div class="col-2"   style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label>
+                        <input class="with-gap" name="group1" type="radio" [(ngModel)]="p1"    value="rejeter" /><span></span></label></div>
+                      <div class="col-2"   style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group1" [(ngModel)]="p1" type="radio"  value="insuffisant" /><span></span></label></div>
+                      <div class="col-2"  style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group1" [(ngModel)]="p1" type="radio" value="passable" /><span></span></label></div>
+                      <div class="col-2"  style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group1" [(ngModel)]="p1" type="radio"  value="assezbien"/><span></span></label></div>
+                      <div class="col-2"  style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group1" [(ngModel)]="p1" type="radio"  value="bien"/><span></span></label></div>
+                      <div class="col-2"  style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group1" [(ngModel)]="p1" type="radio"  value="tres_bien"/><span></span></label></div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <div class="col-2"><a class="btn-floating btn-small waves-effect waves-light blue">P2</a></div>
+                  <div class="col-10">
+                    <div class="row">
+                      <div class="col-2"   style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label>
+                        <input class="with-gap" name="group2" type="radio" [(ngModel)]="p2" value="rejeter" checked /><span></span></label></div>
+                      <div class="col-2"   style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group2" [(ngModel)]="p2" type="radio" value="insuffisant" /><span></span></label></div>
+                      <div class="col-2"  style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group2" [(ngModel)]="p2" type="radio" value="passable"  /><span></span></label></div>
+                      <div class="col-2"  style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group2" [(ngModel)]="p2" type="radio" value="assezbien" /><span></span></label></div>
+                      <div class="col-2"  style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group2" [(ngModel)]="p2" type="radio" value="bien" /><span></span></label></div>
+                      <div class="col-2"  style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group2" [(ngModel)]="p2" type="radio" value="tres_bien" /><span></span></label></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-2"><a class="btn-floating btn-small waves-effect waves-light blue">P3</a></div>
+                  <div class="col-10">
+                    <div class="row">
+                      <div class="col-2"   style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label>
+                        <input class="with-gap" name="group3" type="radio"[(ngModel)]="p3" checked value="rejeter" /><span></span></label></div>
+                      <div class="col-2"   style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap"  name="group3" [(ngModel)]="p3" type="radio" value="insuffisant" /><span></span></label></div>
+                      <div class="col-2"  style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group3"  [(ngModel)]="p3" type="radio" value="passable"  /><span></span></label></div>
+                      <div class="col-2"  style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group3" [(ngModel)]="p3" type="radio"  value="assezbien" /><span></span></label></div>
+                      <div class="col-2"  style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group3" [(ngModel)]="p3" type="radio" value="bien" /><span></span></label></div>
+                      <div class="col-2"  style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group3" [(ngModel)]="p3" type="radio" value="tres_bien" /><span></span></label></div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="row">
+                  <div class="col-2"><a class="btn-floating btn-small waves-effect waves-light blue">P4</a></div>
+                  <div class="col-10">
+                    <div class="row">
+                      <div class="col-2"   style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label>
+                        <input class="with-gap" name="group4" type="radio" [(ngModel)]="p4" checked value="rejeter"  /><span></span></label></div>
+                      <div class="col-2"   style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group4" [(ngModel)]="p4" type="radio" value="insuffisant"  /><span></span></label></div>
+                      <div class="col-2"  style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group4" [(ngModel)]="p4" type="radio" value="passable"  /><span></span></label></div>
+                      <div class="col-2"  style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group4" [(ngModel)]="p4" type="radio" value="assezbien" /><span></span></label></div>
+                      <div class="col-2"  style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group4" [(ngModel)]="p4" type="radio" value="bien" /><span></span></label></div>
+                      <div class="col-2"  style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group4" [(ngModel)]="p4" type="radio" value="tres_bien" /><span></span></label></div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <div class="col-2"><a class="btn-floating btn-small waves-effect waves-light blue">P5</a></div>
+                  <div class="col-10">
+                    <div class="row">
+                      <div class="col-2"   style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label>
+                        <input class="with-gap" name="group5" type="radio" [(ngModel)]="p5" checked value="rejeter" /><span></span></label></div>
+                      <div class="col-2"   style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group5" [(ngModel)]="p5" type="radio" value="insuffisant" /><span></span></label></div>
+                      <div class="col-2"  style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group5" [(ngModel)]="p5" type="radio"  value="passable" /><span></span></label></div>
+                      <div class="col-2"  style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group5" [(ngModel)]="p5" type="radio" value="assezbien" /><span></span></label></div>
+                      <div class="col-2"  style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group5" [(ngModel)]="p5" type="radio" value="bien" /><span></span></label></div>
+                      <div class="col-2"  style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group5" [(ngModel)]="p5" type="radio"  value="tres_bien" /><span></span></label></div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+                <div class="row">
+                  <div class="col-2"><a class="btn-floating btn-small waves-effect waves-light blue">P6</a></div>
+                  <div class="col-10">
+                    <div class="row">
+                      <div class="col-2"   style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label>
+                        <input class="with-gap" name="group6"  [(ngModel)]="p6" type="radio" checked value="rejeter" /><span></span></label></div>
+                      <div class="col-2"   style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group6" [(ngModel)]="p6" type="radio" value="insuffisant" /><span></span></label></div>
+                      <div class="col-2"  style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group6" [(ngModel)]="p6" type="radio" value="passable"  /><span></span></label></div>
+                      <div class="col-2"  style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group6" [(ngModel)]="p6" type="radio" value="assezbien" /><span></span></label></div>
+                      <div class="col-2"  style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group6" [(ngModel)]="p6" type="radio" value="bien" /><span></span></label></div>
+                      <div class="col-2"  style="display: inline-grid !important;
+                           grid-template-columns: 100px 100px 100px !important;
+                           justify-items: center !important; "><label><input class="with-gap" name="group6" [(ngModel)]="p6" type="radio" value="tres_bien" /><span></span></label></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div *ngFor="let alert of alertsDismiss">
+                  <alert [type]="alert.type" [dismissOnTimeout]="alert.timeout">{{ alert.msg }}</alert>
+                </div>
+                <div class="row">
+                  <div class="col-5"></div>
+                  <div class="col-4">  <a class="waves-effect waves-light btn light-green accent-4"  (click)="infoModal.show()">Votez</a></div>
+                  <div class="col-4"></div>
+                </div>
+                {{theJSON}}
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div bsModal #infoModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" style="width: 54%;
+height: 49%;">
+    <div class="modal-dialog modal-info" role="document">
+      <div class="modal-content" style="padding: 3px;">
+        <div class="modal-header">
+          <h4 class="modal-title">Est_ce que vous êtes sur ?</h4>
+          <button type="button" class="close" (click)="infoModal.hide()" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Attention, apres avoir enregister votre vote, vous ne pouvez plus le changer.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" id='bb' (click)="infoModal.hide()">Fermer</button>&nbsp;&nbsp;
+          <button type="button" class="btn btn-info" (click)="show()">Envoyer Quand meme</button>
+        </div>
+
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+</div>
+
+<app-footer>
+  <span><a href="https://www.univ-paris13.fr/">Université Paris 13</a> &copy; 2018</span>
+  <span class="ml-auto">Developed by <a href="http://www.sofiene-ben-khemis.fr">Sofiene BEN KHEMIS</a></span>
+</app-footer>

@@ -1,0 +1,56 @@
+[{
+
+  "nom": "P1",
+  "rejter": 30,
+  "insuffisant": 30,
+  "passable": 10,
+  "assezBien": 10,
+  "bien": 10,
+  "tresBien": 20
+},
+  {
+
+    "nom": "P2",
+    "rejter": 5,
+    "insuffisant": 5,
+    "passable": 10,
+    "assezBien": 10,
+    "bien": 5,
+    "tresBien": 65
+  },
+  {
+    "nom": "P3",
+    "rejter": 5,
+    "insuffisant": 5,
+    "passable": 10,
+    "assezBien": 10,
+    "bien": 50,
+    "tresBien": 20
+  },
+  {
+    "nom": "P4",
+    "rejter": 20,
+    "insuffisant": 5,
+    "passable": 10,
+    "assezBien": 30,
+    "bien": 20,
+    "tresBien": 15
+  },
+  {
+    "nom": "P5",
+    "rejter": 60,
+    "insuffisant": 10,
+    "passable": 10,
+    "assezBien": 10,
+    "bien": 5,
+    "tresBien": 5
+  },
+  {
+    "nom": "P6",
+    "rejter": 5,
+    "insuffisant": 5,
+    "passable": 55,
+    "assezBien": 25,
+    "bien": 5,
+    "tresBien": 5
+  }]

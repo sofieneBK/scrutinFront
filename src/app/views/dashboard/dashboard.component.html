@@ -1,0 +1,182 @@
+<div class="animated fadeIn">
+
+  <div class="row">
+    <div class="col-sm-12 col-lg-4"></div>
+    <div class="col-sm-12 col-lg-4">
+      <div class="card text-white bg-primary" >
+        <div  class="card-body pb-0" >
+          <br>
+          <br>
+          <div style="text-align: center;">
+            <div class="text-value">{{res.total_vote}}</div>
+            <div>NOMBRES TOTALE DES VOTES</div>
+          </div>
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div><!--/.col-->
+    <div class="col-sm-12 col-lg-4"></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-lg-2">
+      <div class="card text-white bg-danger" >
+        <div  class="card-body pb-0" >
+          <br>
+          <br>
+          <div style="text-align: center;">
+            <div class="text-value">{{res.rejter}}</div>
+            <div>A REJETER</div>
+          </div>
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div><!--/.col-->
+    <div class="col-sm-12 col-lg-2">
+      <div class="card text-white bg-info">
+        <div  style="background-color: #ff5a00  !important;" class="card-body pb-0">
+          <br>
+          <br>
+          <div style="text-align: center;">
+            <div class="text-value">{{res.insuffisant}}</div>
+            <div>INSUFFISANT</div>
+          </div>
+          <br>
+          <br>
+          <br>
+        </div>
+
+      </div>
+    </div><!--/.col-->
+    <div class="col-sm-12 col-lg-2">
+      <div class="card text-white bg-warning">
+        <div  class="card-body pb-0">
+          <br>
+          <br>
+          <div style="text-align: center;">
+            <div class="text-value">{{res.passable}}</div>
+            <div>PASSABLE</div>
+          </div>
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div><!--/.col-->
+    <div class="col-sm-12 col-lg-2">
+      <div class="card text-white bg-success">
+        <div style="background-color: #80b014 !important;" class="card-body pb-0">
+
+
+          <br>
+          <br>
+          <div style="text-align: center;">
+         <div class="text-value">{{res.assezBien}}</div>
+          <div>ASSEZ BIEN</div>
+          </div>
+            <br>
+          <br>
+          <br>
+        </div>
+
+      </div>
+    </div><!--/.col-->
+    <div class="col-sm-12 col-lg-2">
+      <div class="card text-white bg-success">
+        <div  style="background-color: #4bcb4b !important;"  class="card-body pb-0">
+
+
+          <br>
+          <br>
+          <div style="text-align: center;">
+            <div class="text-value">{{res.bien}}</div>
+            <div>BIEN</div>
+          </div>
+          <br>
+          <br>
+          <br>
+        </div>
+
+      </div>
+    </div><!--/.col-->   <div class="col-sm-12 col-lg-2">
+    <div class="card text-white bg-success">
+      <div  style="background-color: #359035 !important;"  class="card-body pb-0">
+
+
+        <br>
+        <br>
+        <div style="text-align: center;">
+          <div class="text-value">{{res.tresBien}}</div>
+          <div>TRES BIEN</div>
+        </div>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div><!--/.col-->
+  </div><!--/.row-->
+  <div class="card">
+    <div class="card-body">
+
+        <div class="row">
+          <div class="col">
+<app-fullbar></app-fullbar>
+          </div>
+        </div>
+    </div>
+    <div class="card-footer">
+      <div class="row text-center">
+        <div class="col-sm-12 col-md mb-sm-2 mb-0">
+          <div class="text-muted">A Rejeter</div>
+          <strong>{{res.rejter}} ({{pRej}}%)</strong>
+          <div class="progress progress-xs mt-2">
+            <div class="progress-bar" role="progressbar" [style.width.%]="pRej" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md mb-sm-2 mb-0">
+          <div class="text-muted">Insuffisant</div>
+          <strong>{{res.insuffisant}} ({{pInssuf}}%)</strong>
+          <div class="progress progress-xs mt-2">
+            <div class="progress-bar" role="progressbar"  [style.width.%]="pInssuf" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md mb-sm-2 mb-0">
+          <div class="text-muted">Passable</div>
+          <strong>{{res.passable}} ({{pPass}}%)</strong>
+          <div class="progress progress-xs mt-2">
+            <div class="progress-bar" role="progressbar" [style.width.%]="pPass" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md mb-sm-2 mb-0">
+          <div class="text-muted">Assez Bien</div>
+          <strong>{{res.assezBien}} ({{pAssez}}%)</strong>
+          <div class="progress progress-xs mt-2">
+            <div class="progress-bar" role="progressbar" [style.width.%]="pAssez" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md mb-sm-2 mb-0">
+          <div class="text-muted">Bien</div>
+          <strong>{{res.bien}} ({{pBien}}%)</strong>
+          <div class="progress progress-xs mt-2">
+            <div class="progress-bar" role="progressbar" [style.width.%]="pBien" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md mb-sm-2 mb-0">
+          <div class="text-muted">Trés Bien</div>
+          <strong>{{res.tresBien}} ({{pTb}}%)</strong>
+          <div class="progress progress-xs mt-2">
+            <div class="progress-bar" role="progressbar"  [style.width.%]="pTb" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+       <div style="text-align: center"><b><h1> Le résulat est : {{res.res}}</h1></b></div>
+    </div>
+  </div>
+  <!--/.card-->
+
+</div>

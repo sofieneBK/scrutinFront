@@ -1,0 +1,38 @@
+<dx-chart
+  id="chart"
+  title="RESULTATS DE SCRUTIN"
+  [dataSource]="populationData">
+  <dxi-value-axis
+    [tickInterval]="25"
+    [valueMarginsEnabled]="false"
+    [visualRange]="{startValue:0,endValue:100}">
+    <dxo-label
+      [customizeText]="customizeValueAxisText">
+      <dxo-format
+        type="fixedPoint"
+        [precision]="0"></dxo-format>
+    </dxo-label>
+  </dxi-value-axis>
+  <dxi-series valueField="rejter" name="A REJETER"></dxi-series>
+  <dxi-series valueField="insuffisant" name="INSUFFISANT"></dxi-series>
+  <dxi-series valueField="passable" name="PASSABLE"></dxi-series>
+  <dxi-series valueField="assezBien" name="ASSEZ BIEN"></dxi-series>
+  <dxi-series valueField="bien" name="BIEN"></dxi-series>
+  <dxi-series valueField="tresBien" name="TRES BIEN"></dxi-series>
+
+  <dxo-common-series-settings
+    argumentField="nom"
+    type="stackedBar">
+  </dxo-common-series-settings>
+  <dxo-legend
+    verticalAlignment="bottom"
+    horizontalAlignment="center"
+    itemTextPosition="top">
+  </dxo-legend>
+  <dxo-export [enabled]="true"></dxo-export>
+  <dxo-tooltip
+    [enabled]="true"
+    location="edge"
+    [customizeTooltip]="customizeTooltip">
+  </dxo-tooltip>
+</dx-chart>

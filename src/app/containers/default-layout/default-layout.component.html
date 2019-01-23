@@ -1,0 +1,25 @@
+<div class="app-body">
+  <!-- Main content -->
+  <main class="main">
+    <!-- Breadcrumb -->
+    <ol class="breadcrumb">
+      <app-breadcrumb></app-breadcrumb>
+      <!-- Breadcrumb Menu-->
+      <li class="breadcrumb-menu d-md-down-none">
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+          <a class="btn" href="#"><i class="icon-speech"></i></a>
+          <a class="btn" [routerLink]="['/dashboard']"><i class="icon-graph"></i> &nbsp;Résultats</a>
+          <a class="btn" [routerLink]="['/vote']" ><i class="icon-settings"></i> &nbsp;Votez</a>
+        </div>
+      </li>
+    </ol>
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div><!-- /.container-fluid -->
+  </main>
+
+</div>
+<app-footer>
+  <span><a href="https://www.univ-paris13.fr/">Université Paris 13</a> &copy; 2018</span>
+  <span class="ml-auto">Developed by <a href="http://www.sofiene-ben-khemis.fr">Sofiene BEN KHEMIS</a></span>
+</app-footer>
