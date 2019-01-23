@@ -19,5 +19,8 @@ $ npm install
 ```shellsession
 $ ng serve
 ```
+```shellsession
+$ http://localhost:4200
+```
 
 
